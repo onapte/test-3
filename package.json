@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@amcharts/amcharts5": "^5.1.8",
+    "@types/googlemaps": "^3.43.3",
+    "aewx-metar-parser": "^0.10.1",
+    "geocoder": "^0.2.3",
+    "metar-parser": "^1.0.0",
+    "plotly.js-dist": "^2.11.0"
+  }
+}

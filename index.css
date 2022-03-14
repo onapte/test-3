@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+.navbar {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+}
+
+.navbar-brand {
+    color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+}
+
+#home-page {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 61px;
+    text-align: center;
+    background: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    
+}
+
+#motto {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 85px;
+    position: relative;
+    text-align: center;
+    top: 150px;
+    color: white;
+    text-shadow: 3px 3px 20px #ff99cc,
+    -2px 1px 30px #ff99cc;
+}
+
+#home-links {
+    position: relative;
+    font-size: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    top: 200px;
+    width: 300px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#home-links > ul {
+    list-style-type: none;
+    align-items: center;
+
+}
+
+#home-links > ul > li {
+    position: relative;
+    right: 25px;
+}
+
+#home-links > ul > li:hover {
+    color: blueviolet;
+}
+
+#metar-table {
+    font-family: 'Mulish';
+    font-size: 1.5rem;
+    margin: 20px;
+    margin-top: 75px;
+}
+
+#metar-table-head {
+    background-color: rgb(168, 211, 247);
+    font-weight: 100;
+}
+
+.metar-table-entry {
+    display: flex;
+}
+
+.metar-table-entry > div {
+    flex: 2.75;
+    text-align: center;
+    border: solid 2px cadetblue;
+    padding: 4px;
+}
+
+#satellite-page {
+    font-family: 'Mulish';
+    margin: 0 auto;
+    width: 90%;
+    align-items: center;
+    font-size: 22px;
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 75px;
+
+}
+
+#satellite-infrared {
+    background-image: url('https://mausam.imd.gov.in/Satellite/3Dasiasec_ir1.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60rem;
+    flex: 5;
+    
+    background-position: center;
+    background-position-y:top;
+    margin-bottom: 20px;
+}
+
+#satellite-vapour {
+    background-image: url('https://mausam.imd.gov.in/Satellite/3Dasiasec_wv.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60rem;
+    flex: 5;
+    background-position: center;
+    background-position-y:top;
+    
+}
+
+#radar-page {
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-top: 75px;
+
+}
+
+#radar-page > ul {
+    list-style-type: none;
+}
+
+#radar-page > ul > li {
+    display: inline;
+    margin-left: 10px;
+}
+
+.radar-image-div {
+    align-items: center;
+    text-align: center;
+}
+
+#map-page {
+    margin-top: 75px;
+
+}
+
+#docs-page {
+    font-family: 'Mulish';
+    margin: 0 auto;
+    width: 90%;
+    align-items: center;
+    font-size: 22px;
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 75px;
+
+}
+
+#lightning-page {
+    height: 600px;
+    width:  100%;
+    background-color: red;
+    color: white;
+}
+
+#chartdiv {
+    height: 600px;
+    background-color: lightblue;
+    padding: 20px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 950px) {
+    #satellite-infrared, #satellite-vapour {
+        height: 50rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #satellite-infrared, #satellite-vapour {
+        height: 40rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #satellite-infrared, #satellite-vapour {
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #motto {
+        top: 100px;
+        font-size: 70px;
+    }
+
+    #home-links {
+        top: 170px;
+    }
+}
